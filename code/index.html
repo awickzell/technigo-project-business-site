@@ -1,17 +1,132 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Site</title>
-    <!-- Don't forget to link the CSS file here! -->
-  </head>
-  <body>
-    <h1>Business name 🌻</h1>
+<html lang="sv">
 
-    <!-- Video or image as a header is cool :) -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>STARK GYM</title>
+</head>
 
-    <!-- Signup form -->
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="assets/starkgym.jpg" alt="logo">
+        <h1>STARK GYM</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Kundtjänst</a></li>
+          <li><a href="#">Hitta hit</a></li>
+          <li><a href="#">Friskvård</a></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Logga in</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <span>MENY</span>
+      </div>
+    </div>
+  </header>
 
-  </body>
+  <main>
+    <section class="video-header">
+      <h2>VÄLKOMMEN TILL STOCKHOLMS STARKASTE GYM</h2>
+      <video autoplay="" muted="" loop="" playsinline="">
+        <source src="assets/video1.mp4" type="video/mp4">
+        Din webbläsare stödjer inte video-taggen.
+      </video>
+    </section>
+
+    <section class="welcome-text">
+      <div class="welcome-box">
+        <h2>Välkommen till ditt gym – alltid öppet, alltid för dig!</h2>
+      </div>
+
+      <div class="box-container">
+        <div class="welcome-box">
+          <p>Som medlem hos oss får du tillgång till vårt gym dygnet runt, året om. Oavsett när du vill träna, är vi
+            här
+            för att möta dina behov.</p>
+        </div>
+        <div class="welcome-box">
+          <p>Gymmet är alltid bemannat för din trygghet och bekvämlighet. Vi erbjuder fräscha omklädningsrum, rymliga
+            duschar och en rogivande bastu – perfekt efter ett intensivt träningspass.</p>
+        </div>
+      </div>
+
+      <div class="welcome-box">
+        <p>Allt detta kan du njuta av för endast 249kr i månaden.</p>
+        <h2>Varmt välkommen att bli en del av vår gemenskap!</h2>
+      </div>
+    </section>
+
+    <section class="membership">
+      <div class="membership-image">
+        <img src="assets/bild1.jpg" alt="BLI MEDLEM">
+        <h3>BLI MEDLEM REDAN IDAG</h3>
+      </div>
+
+      <form class="membership-form" action="https://httpbin.org/anything" method="post">
+        <label for="name">För- och efternamn:</label>
+        <input type="text" id="name" name="name" placeholder="Förnamn Efternamn" required="">
+
+        <label for="address">Adress:</label>
+        <input type="text" id="address" name="address" placeholder="Gata 123" required="">
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" placeholder="000-1234567" pattern="[0-9]{3}-[0-9]{7}" required="">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Mejladress" required="">
+
+        <button type="submit">BLI MEDLEM!</button>
+      </form>
+    </section>
+
+    <section class="about">
+      <img src="assets/bild2.png" alt="STARK GYM">
+      <h2>STARK GYM – DIN PLATS FÖR STYRKA OCH GEMENSKAP</h2>
+
+      <div class="box-container">
+        <div class="about-box">
+          <p>STARK GYM grundades 2023 med en vision att skapa ett modernt träningscenter där alla, oavsett träningsnivå,
+            kan utvecklas och känna sig välkomna.</p>
+        </div>
+        <div class="about-box">
+          <p>Med fokus på högkvalitativ utrustning, en inspirerande miljö och personlig service, har vi snabbt blivit
+            ett populärt val för både nybörjare och erfarna träningsentusiaster.</p>
+        </div>
+        <div class="about-box">
+          <p>Vårt gym är öppet dygnet runt och erbjuder en komplett träningsupplevelse med toppmoderna maskiner, fria
+            vikter, och funktionella träningsytor.</p>
+        </div>
+        <div class="about-box">
+          <p>Vi är stolta över att kunna erbjuda en rad faciliteter såsom omklädningsrum, duschar och bastu för att du
+            ska kunna koppla av och återhämta dig efter ditt träningspass.</p>
+        </div>
+        <div class="about-box">
+          <p>På STARK GYM tror vi på att styrka handlar om mer än bara fysisk träning – det handlar om att bygga
+            gemenskap och personlig utveckling.</p>
+        </div>
+        <div class="about-box">
+          <p>Välkommen till STARK GYM, där din resa mot ett starkare jag börjar!</p>
+          <img src="assets/starkgym2.jpg" alt="STARK GYM logotyp" class="gym-logo">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>Created by Arvid Wickzell</p>
+    <img src="assets/logo.svg" alt="Technigo logotyp">
+  </footer>
+
+
+
+</body>
+
 </html>
